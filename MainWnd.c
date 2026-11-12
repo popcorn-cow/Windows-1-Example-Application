@@ -8,11 +8,7 @@
 static char MainWndClass[] = "Windows 1 Example Application";
 
 /* Window procedure for our main window */
-LONG FAR PASCAL MainWndProc(hWnd, msg, wParam, lParam)
-HWND hWnd;
-unsigned msg;
-WORD wParam;
-LONG lParam;
+LRESULT WINAPI MainWndProc(HWND hWnd, UINT msg, WPARAM wParam, LPARAM lParam)
 {
   switch (msg)
   {
@@ -24,7 +20,8 @@ LONG lParam;
       {
         case ID_HELP_ABOUT:
         {
-          ShowAboutDialog(hWnd);
+          // ShowAboutDialog(hWnd);
+          MessageBoxW(hWnd, L"from transmisson zero", L"About", 0);
           return 0;
         }
 
@@ -47,7 +44,9 @@ LONG lParam;
         /* Show "about" dialog on about system menu item */
         case ID_HELP_ABOUT:
         {
-          ShowAboutDialog(hWnd);
+          // ShowAboutDialog(hWnd);
+          MessageBoxW(hWnd, L"from transmisson zero", L"About", 0);
+
           return 0;
         }
       }

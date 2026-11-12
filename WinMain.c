@@ -7,10 +7,7 @@
 HANDLE g_hInstance = NULL;
 
 /* Our application entry point */
-int PASCAL WinMain(hInstance, hPrevInstance, lpCmdLine, nCmdShow)
-HANDLE hInstance, hPrevInstance;
-LPSTR lpCmdLine;
-int nCmdShow;
+int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine, int nCmdShow)
 {
   HWND hWnd;
   HANDLE hAccelerators;
@@ -33,8 +30,6 @@ int nCmdShow;
     return 0;
   }
 
-  /* Load accelerators */
-  hAccelerators = LoadAccelerators(hInstance, MAKEINTRESOURCE(IDR_ACCELERATOR));
 
   /* Show main window and force a paint */
   ShowWindow(hWnd, nCmdShow);

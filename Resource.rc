@@ -14,6 +14,7 @@ BEGIN
   POPUP "Help"
   BEGIN
     MENUITEM "About",                  ID_HELP_ABOUT
+    MENUITEM "Nigga fart",             ID_HELP_ABOUT
   END
 END
 
@@ -24,7 +25,7 @@ CAPTION "About"
 BEGIN
   ICON             IDI_APPICON,IDC_STATIC,7,7,20,20
   LTEXT            "Windows 1 Example application.",IDC_STATIC,34,7,125,8
-  LTEXT            "©2017 Transmission Zero",IDC_STATIC,34,17,100,8
+  LTEXT            "ï¿½2017 Transmission Zero",IDC_STATIC,34,17,100,8
   DEFPUSHBUTTON    "OK",IDOK,103,46,50,14,WS_GROUP
 END
 

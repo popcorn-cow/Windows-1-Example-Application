@@ -2,7 +2,8 @@
 #define MAINWND_H
 
 /* Window procedure for our main window */
-LONG FAR PASCAL MainWndProc(HWND, unsigned, WORD, LONG);
+LRESULT WINAPI MainWndProc(HWND hWnd, UINT msg, WPARAM wParam, LPARAM lParam);
+
 
 /* Register a class for our main window */
 BOOL RegisterMainWindowClass(void);
